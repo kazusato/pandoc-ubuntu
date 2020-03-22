@@ -12,6 +12,8 @@ RUN apt install -y wget
 RUN wget https://github.com/jgm/pandoc/releases/download/2.9.2/pandoc-2.9.2-1-amd64.deb && \
   apt install -y ./pandoc-2.9.2-1-amd64.deb && \
   rm pandoc-2.9.2-1-amd64.deb
+
+RUN apt install -y librsvg2-bin
 RUN mkdir /work
 RUN useradd -s /usr/sbin/nologin -U -d /work -u 1000 pandoc
 
