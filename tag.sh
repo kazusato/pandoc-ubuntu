@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-docker tag kazusato/pandoc-ubuntu:v2 demoreg.azurecr.io/kazusato/pandoc-ubuntu:v2
+. config
+docker tag kazusato/pandoc-ubuntu:$TAG demoreg.azurecr.io/kazusato/pandoc-ubuntu:$TAG

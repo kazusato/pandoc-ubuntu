@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-
-docker build -t kazusato/pandoc-ubuntu:v2 .
+. config
+docker build -t kazusato/pandoc-ubuntu:$TAG .
